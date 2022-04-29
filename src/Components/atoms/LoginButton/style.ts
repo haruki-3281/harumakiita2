@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
-export const $LoginButton = styled.a`
+const $LoginButton = styled.a`
     text-decoration:none;
 
     :hover{
         text-decoration:underline;
     }
 `;
+
+export default $LoginButton;

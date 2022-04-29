@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const $HeaderTitle = styled.div`
+const $HeaderTitle = styled.div`
     position:relative;
     width:fit-content;
 
@@ -11,3 +11,5 @@ export const $HeaderTitle = styled.div`
         text-decoration:none;
     }
 `;
+
+export default $HeaderTitle;

@@ -1,13 +1,19 @@
 import React from "react";
-import { $Likes } from "./style";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import $Likes from "./style";
 
-export default function Likes(props){
+type obj = {
+    likesNum: number;
+};
+
+export default function Likes(props: obj){
+    const { likesNum } = props;
+
     return (
         <$Likes>
             <FontAwesomeIcon icon={faThumbsUp}/>
-            <p>{props.likesNum}</p>
+            <p>{likesNum}</p>
         </$Likes>
     );
 };
