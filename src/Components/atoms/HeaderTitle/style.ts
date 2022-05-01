@@ -1,15 +1,15 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const $HeaderTitle = styled.div`
-    position:relative;
-    width:fit-content;
+    position: relative;
+    width: fit-content;
 
     font-family: system-ui;
-    font-weight:bold;
+    font-weight: bold;
 
     a {
-        text-decoration:none;
+        text-decoration: none;
     }
-`;
+`
 
-export default $HeaderTitle;
+export default $HeaderTitle

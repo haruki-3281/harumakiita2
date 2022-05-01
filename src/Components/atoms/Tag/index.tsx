@@ -1,23 +1,23 @@
-import React,{ useState } from "react";
-import $Tag from "./style";
+import React, { useState } from 'react'
+import $Tag from './style'
 
 type typeProps = {
-    tagName:string;
-    last:boolean;
-};
+    tagName: string
+    last: boolean
+}
 
-export default function Tag(props: typeProps){
-    const { tagName,last } = props;
-    const [_hover,setHover] = useState(false);
+export default function Tag(props: typeProps) {
+    const { tagName, last } = props
+    const [_hover, setHover] = useState(false)
 
-    return(
+    return (
         <$Tag
             hover={_hover}
-            onMouseOver={()=>setHover(true)}
-            onMouseOut ={()=>setHover(false)}
+            onMouseOver={() => setHover(true)}
+            onMouseOut={() => setHover(false)}
         >
             {tagName}
-            {last && ","}
+            {last && ','}
         </$Tag>
-    );
-};
+    )
+}

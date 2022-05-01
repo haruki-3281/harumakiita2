@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const $SignupButton = styled.a`
-    text-decoration:none;
-    border:2px solid white;
+    text-decoration: none;
+    border: 2px solid white;
 
-    :hover{
-        background:white;
-        color:#8858FF;
+    :hover {
+        background: white;
+        color: #8858ff;
     }
-`;
+`
 
-export default $SignupButton;
+export default $SignupButton

@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const $RightSideContainer = styled.div`
     grid-column: 3;
-`;
+`
 
-export default $RightSideContainer;
+export default $RightSideContainer

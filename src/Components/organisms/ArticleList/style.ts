@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const $ArticleList = styled.div`
-  position: relative;
+    position: relative;
 
-  width: 100%;
-  grid-column: 2;
+    width: 100%;
+    grid-column: 2;
 
-  display: flex;
-  flex-direction: column;
-`;
+    display: flex;
+    flex-direction: column;
+`
 
-export default $ArticleList;
+export default $ArticleList

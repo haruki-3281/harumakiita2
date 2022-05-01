@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const $Tag = styled.p`
-    text-decoration: ${(hover:{hover:boolean})=> hover.hover ? "underline" : "none"}
-`;
+    text-decoration: ${(hover: { hover: boolean }) =>
+        hover.hover ? 'underline' : 'none'};
+`
 
-export default $Tag;
+export default $Tag

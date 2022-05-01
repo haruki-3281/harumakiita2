@@ -1,8 +1,6 @@
-import React from "react";
-import $LeftSideContainer from "./style";
+import React from 'react'
+import $LeftSideContainer from './style'
 
-export default function LeftSideContainer(){
-    return (
-        <$LeftSideContainer />   
-    );
-};
+export default function LeftSideContainer() {
+    return <$LeftSideContainer />
+}

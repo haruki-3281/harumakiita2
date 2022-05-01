@@ -1,21 +1,21 @@
-import React from "react";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { $SearchIcon,$SearchInput } from "./style";
+import React from 'react'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { $SearchIcon, $SearchInput } from './style'
 
 type typeProps = {
-    className:string;
-};
+    className: string
+}
 
-export default function SearchInput(props: typeProps){
-    const { className } = props;
+export default function SearchInput(props: typeProps) {
+    const { className } = props
 
-    return(
+    return (
         <$SearchInput className={className}>
             <$SearchIcon className="searchIcon">
                 <FontAwesomeIcon icon={faSearch} />
             </$SearchIcon>
             <input placeholder="キーワードを入力" />
         </$SearchInput>
-    );
-};
+    )
+}
