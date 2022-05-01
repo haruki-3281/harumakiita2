@@ -3,10 +3,12 @@ import $HeaderContainer from "./style";
 import Navigator from "../Navigator";
 import Header from "../Header";
 
-export default function HeaderContainer(props){
+export default function HeaderContainer(props:{title:string;}){
+    const { title } = props;
+    
     return (
         <$HeaderContainer>
-            <Header title={props.title} />
+            <Header title={title} />
             <Navigator />
         </$HeaderContainer>
     );

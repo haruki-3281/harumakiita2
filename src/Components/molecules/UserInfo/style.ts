@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const $UserInfo = styled.div`
+const $UserInfo = styled.div`
     display:flex;
     align-items:center;
 
@@ -10,3 +10,5 @@ export const $UserInfo = styled.div`
         border-radius:1rem;
     }
 `;
+
+export default $UserInfo;

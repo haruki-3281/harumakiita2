@@ -4,7 +4,7 @@ import LeftSideContainer from "../LeftSideContainer";
 import ArticleList from "../ArticleList";
 import RightSideContainer from "../RightSideContainer";
 
-export default function ContentContainer(props){
+export default function ContentContainer(){
     return (
         <$ContentContainer>
             <LeftSideContainer />

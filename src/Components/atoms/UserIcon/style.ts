@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const $UserIcon = styled.div`
+const $UserIcon = styled.div`
     position:relative;
     overflow:hidden;
 
@@ -17,7 +17,7 @@ export const $UserIcon = styled.div`
         height:100%;
         background:rgba(0,0,0,0.25);
 
-        display:${(hover)=>hover.hover? "block":"none" }
+        display:${(hover:{hover:boolean})=>hover.hover? "block":"none" }
     }
 
     img { 
@@ -32,3 +32,5 @@ export const $UserIcon = styled.div`
         height:100%;
     }
 `;
+
+export default $UserIcon;

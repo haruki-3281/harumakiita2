@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const $Article = styled.div`
+const $Article = styled.div`
     position:relative;
     width:100%;
     cursor:pointer;
@@ -18,4 +18,4 @@ export const $Article = styled.div`
     }
 `;
 
-export { $Article };
+export default $Article;

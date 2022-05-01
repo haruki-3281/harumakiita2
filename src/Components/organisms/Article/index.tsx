@@ -5,8 +5,13 @@ import Title from "../../atoms/Title";
 import TagsContainer from "../../molecules/TagsContainer";
 import Likes from "../../atoms/Likes";
 
-export default function Article(props) {
-    const data = props.data;
+type typeProps = {
+    data:typeArticle
+};
+
+export default function Article(props:typeProps) {
+    const {data} = props;
+    const {user,created_at,title,tags,likes_count} = data;
     const [hover, setHover] = useState(false);
 
     useEffect(() => {
@@ -20,15 +25,15 @@ export default function Article(props) {
             onMouseOut={() => setHover(false)}
         >
             <UserInfo
-                user={data.user}
-                timestamp={data.created_at}
+                user={user}
+                timestamp={created_at}
             />
             <Title
-                title={data.title}
+                title={title}
                 hover={hover}
             />
-            <TagsContainer tags={data.tags} />
-            <Likes likesNum={data.likes_count} />
+            <TagsContainer tags={tags} />
+            <Likes likesNum={likes_count} />
         </$Article>
     );
 };

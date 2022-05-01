@@ -1,5 +1,5 @@
 import React from "react";
-import { $PostDay } from "./style";
+import $PostDay from "./style";
 
 type typeProps = {
     timestamp: string;

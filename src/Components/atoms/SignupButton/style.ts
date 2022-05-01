@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const $SignupButton = styled.a`
+const $SignupButton = styled.a`
     text-decoration:none;
     border:2px solid white;
 
@@ -9,3 +9,5 @@ export const $SignupButton = styled.a`
         color:#8858FF;
     }
 `;
+
+export default $SignupButton;

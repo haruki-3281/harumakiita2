@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const $TagsContainer = styled("div")`
+const $TagsContainer = styled("div")`
     display: flex;
     align-items: center;
 `;
 
+export default $TagsContainer;

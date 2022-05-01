@@ -1,11 +1,17 @@
 import React from "react";
-import { $SearchIcon,$SearchInput } from "./style";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { $SearchIcon,$SearchInput } from "./style";
 
-export default function SearchInput(props){
+type typeProps = {
+    className:string;
+};
+
+export default function SearchInput(props: typeProps){
+    const { className } = props;
+
     return(
-        <$SearchInput className={props.className}>
+        <$SearchInput className={className}>
             <$SearchIcon className="searchIcon">
                 <FontAwesomeIcon icon={faSearch} />
             </$SearchIcon>
