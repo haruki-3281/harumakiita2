@@ -17,7 +17,7 @@ export default function Tag(props: typeProps) {
             onMouseOut={() => setHover(false)}
         >
             {tagName}
-            {last && ','}
+            {!last && ','}
         </$Tag>
     )
 }
