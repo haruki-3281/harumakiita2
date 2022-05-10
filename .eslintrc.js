@@ -47,6 +47,12 @@ module.exports = {
                 "ignore": ["$*"]
             }
         ],
+        "camelcase": [
+            0, 
+            {
+                "ignoreDestructuring": true
+            }
+        ],
         "import/extensions":[
             "error",
             "ignorePackages",
